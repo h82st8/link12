@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<script>
+		// if (currentTime.percent == 1) {
+		let arr;
+		let newUrl;
+		let endOfUrl = location.toString().charAt(location.toString().length - 7) + location.toString().charAt(location.toString().length - 6);
+		endOfUrl = parseInt(endOfUrl);
+		endOfUrl = endOfUrl + 1;
+		arr = location.toString().split('');
+		// arr.pop();
+		// arr.pop();
+
+		console.log(arr);
+		arr.splice(arr.length - 7)
+		console.log(arr);
+		newUrl = arr.join('');
+		newUrl = newUrl + endOfUrl + ".html";
+		// location = newUrl;
+
+		console.log(newUrl);
+		// }
+	</script>
+</body>
+
+</html>
